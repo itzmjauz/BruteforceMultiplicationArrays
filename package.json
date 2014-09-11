@@ -1,0 +1,11 @@
+{
+  "name": "bruteforce",
+  "version": "1.0.0",
+  "description": "a bruteforce program for finding the 3 -3 digit numbers , only constisting of the numbers 1-9 , of which the second divided by the first returns two, and the third divided by the first returns three",
+  "main": "main.js",
+  "scripts": {
+    "test": "node main.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
