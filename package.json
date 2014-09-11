@@ -4,7 +4,6 @@
   "description": "Bruteforce the multiplication array assignment in which you have to find 3 numbers of 3 digits, of which the second one divided by the first one returns two, and the third one divided by the first one returns three.",
   "main": "main.js",
   "dependencies": {
-    "async": "^0.9.0"
   },
   "devDependencies": {},
   "scripts": {

@@ -1,5 +1,3 @@
-async = require('async')
-
 function shuffle(list,newlist){
   while(list.length != 0){
     index = Math.round(Math.random() * list.length)
@@ -26,12 +24,12 @@ function test(list){
 
 //running
 function run(){
-  nlist = shuffle([1,2,3,4,5,6,7,8,9],[])
-  nlist = merge(nlist,[])
-  test(nlist)
-  run()
+  setTimeout( function() {
+    nlist = shuffle([1,2,3,4,5,6,7,8,9],[])
+    nlist = merge(nlist,[])
+    test(nlist)
+    run()
+  },0)
 }
-
-//async.forever(run(),function(){console.log('error')})
 run()
 
