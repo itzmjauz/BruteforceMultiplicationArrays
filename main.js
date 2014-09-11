@@ -1,3 +1,5 @@
+async = require('async')
+
 function shuffle(list,newlist){
   while(list.length != 0){
     index = Math.round(Math.random() * list.length)
@@ -19,12 +21,17 @@ function merge(list,num){
 
 function test(list){
   if(list[1]/list[0]==2 && list[2]/list[0]==3) console.log(list)
-  else console.log(list + ' == nope')
 }
 
 
-numbers = [1,2,3,4,5,6,7,8,9]
-
-while(true) {
-  test(merge(shuffle(numbers,[]),[]))
+//running
+function run(){
+  nlist = shuffle([1,2,3,4,5,6,7,8,9],[])
+  nlist = merge(nlist,[])
+  test(nlist)
+  run()
 }
+
+//async.forever(run(),function(){console.log('error')})
+run()
+
